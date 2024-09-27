@@ -1,1 +1,12 @@
-
+// Problem 1
+int Length = 0 , Width = 0 , Area = 0; 
+        Scanner sc = new Scanner (System.in);
+        System.out.println ("Find the length and width of the rectangle");
+        System.out.println ("Enter length");
+        System.out.println ("Enter Width");
+        Length = sc.nextInt();
+        Area = Length * Width;
+        System.out.println ("the Area of the rectangle is + Area");
+        
+         
+        
