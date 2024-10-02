@@ -1,10 +1,11 @@
+
 // Problem 1
 int Length = 0 , Width = 0 , Area = 0; 
         Scanner reader = new Scanner (System.in);
         System.out.println ("Problem 1, Find the length and width of the rectangle");
-        System.out.println ("Enter length: ");
+        System.out.print("Enter length: ");
         Double length = reader.nextDouble();
-        System.out.println ("Enter Width: ");
+        System.out.print ("Enter Width: ");
         Double width = reader.nextDouble();
         double area = length*width;
         System.out.println ("the area of the rectangle is %.2f/n2, area");
@@ -12,7 +13,7 @@ int Length = 0 , Width = 0 , Area = 0;
 // Problem 2 
     Scanner reader = new (System.in);
     System.out.println ("Probem 2, find the area of a circle");
-    System.out.println ("Enter Radius:"); 
+    System.out.print ("Enter Radius:"); 
     double radius = reader.nextDouble(); 
     double circleArea = Math.PI*radius*radius; 
     System.out.printtf ("The area of the circle is %.2f/n", circleArea); 
@@ -27,6 +28,20 @@ int Length = 0 , Width = 0 , Area = 0;
 // Volume 
      double volume = Math.PI * radius * radius * height; 
      System.out.printf("The Volume is %.2f/n", volume); 
+// Surface area 
+     double surfaceArea = (2 * Math.PI * radius * height) + ( 2 * Math.PI * radius * radius ); 
+     System.out.printf(The surface area is: %.2f/n", surfaceArea);
+// Problem 4 
+     System.out.println ("Problem 4, find the period pendulum"); 
+     System.out.print("Enter the pendulum: "); 
+     double pendulumlength = reader.nextDouble(); 
+// complete the period of pendulum 
+     double pendulumPeriod = 2 * Math.PI * Math.pow (pendulumLength/9.8, 0.5); 
+     System.out.printf = ("The period of the pendulum is: %.2f/n", pendulumPeriod); 
+     reader.close(); 
+    
+     
+
 
 
     
