@@ -1,60 +1,49 @@
 import java.util.Scanner;
 
 public Assignment1 { 
-           public static void main (String[] args) {
+
+public static void main (String[] args) {
 // Problem 1
-        Scanner reader = new Scanner (System.in);
-        System.out.println ("Problem 1, Find the length and width of the rectangle");
-        System.out.print("Enter length: ");
-        Double length = reader.nextDouble();
-        System.out.print ("Enter Width: ");
-        Double width = reader.nextDouble();
-        double area = length*width;
-        System.out.println ("the area of the rectangle is %.2f/n2, area");
+            Scanner reader = new Scanner (System.in);
+            System.out.println ("Problem 1, Find the length and width of the rectangle");
+            System.out.print("Enter length: ");
+            Double length = reader.nextDouble();
+            System.out.print ("Enter Width: ");
+            Double width = reader.nextDouble();
+            double area = length*width;
+            System.out.printf ("the area of the rectangle is %.2f\n", area);
 
-// Problem 2 
-    System.out.println ("Probem 2, find the area of a circle");
-    System.out.print ("Enter Radius:"); 
-    double radius = reader.nextDouble(); 
-    double circleArea = Math.PI*radius*radius; 
-    System.out.printf("The area of the circle is %.2f/n", circleArea); 
+// Problem 2
+            System.out.println ("Probem 2, find the area of a circle");
+            System.out.print ("Enter Radius:");
+            double radius = reader.nextDouble();
+            double circleArea = Math.PI*radius*radius;
+            System.out.printf("The area of the circle is %.2f\n", circleArea);
 
-// Problem 3 
-    System.out.println ("Problem 3, find the surface area and volume of cylinder"); 
-    System.out.print ("Enter Height: ");
-    double height = reader.nextDouble(); 
-    System.out.print("Enter radius: "); 
-    radius = reader.nextDouble();
+// Problem 3
+            System.out.println ("Problem 3, find the surface area and volume of cylinder");
+            System.out.print ("Enter Height: ");
+            double height = reader.nextDouble();
+            System.out.print("Enter radius: ");
+            radius = reader.nextDouble();
 
-// Volume 
-     double volume = Math.PI * radius * radius * height; 
-     System.out.printf("The Volume is %.2f/n", volume); 
-// Surface area 
-     double surfaceArea = (2 * Math.PI * radius * height) + ( 2 * Math.PI * radius * radius ); 
-     System.out.printf("The surface area is: %.2f/n", surfaceArea);
+// Volume
+            double volume = Math.PI * radius * radius * height;
+            System.out.printf("The Volume is %.2f\n", volume);
+// Surface area
+            double surfaceArea = (2 * Math.PI * radius * height) + ( 2 * Math.PI * radius * radius );
+            System.out.printf("The surface area is: %.2f\n", surfaceArea);
 
-// Problem 4 
-     System.out.println ("Problem 4, find the period pendulum"); 
-     System.out.print("Enter the pendulum: "); 
-     double pendulumlength = reader.nextDouble(); 
+// Problem 4
+            System.out.println ("Problem 4, find the period pendulum");
+            System.out.print("Enter the pendulum: ");
+            double pendulumlength = reader.nextDouble();
 
-// complete the period of pendulum 
-     double pendulumPeriod = 2 * Math.PI * Math.pow (pendulumlength/9.8, 0.5); 
-     System.out.printf("The period of the pendulum is: %.2f/n", pendulumPeriod); 
-     
-      reader.close(); 
+// complete the period of pendulum
+            double pendulumPeriod = 2 * Math.PI * Math.pow (pendulumlength/9.8, 0.5);
+            System.out.printf("The period of the pendulum is: %.2f\n", pendulumPeriod);
 
-    }
-  } 
+            reader.close();
 
-          
-    
-     
-
-
-
-    
-
-        
-         
-        
+        } 
+} 
