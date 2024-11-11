@@ -1,0 +1,9 @@
+class Main {
+  public static void main(String[] args) {
+
+    String lastmonth = "December";
+
+    System.out.printf("The last month was %s.\n", lastmonth);
+
+  }
+}
