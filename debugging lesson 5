@@ -1,0 +1,11 @@
+class Main {
+  public static void main(String[] args) {
+
+    String transport = "unicycle";
+    String wheels = "1";
+
+  
+    System.out.print("A " + transport + " has " + wheels + " wheel.");
+
+  }
+}
