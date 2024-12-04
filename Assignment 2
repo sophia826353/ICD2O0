@@ -1,1 +1,27 @@
-tkrehuhuohgisrw
+class Main {
+ public static void main(String[] args) {
+   Scanner sc = new Scanner(System.in);
+   
+   char more = ' ';
+   
+   do {
+   System.out.print("Enter a whole number > 0: ");
+   int n = sc.nextInt();
+   System.out.print("The Collatz sequence for n = ");
+   while (n > 1) {
+       if (n % 2 == 0) {
+            n = n / 2;
+               
+            } else {
+            n = 3 * n + 1;
+            }
+            System.out.printf("%,d", n);
+            System.out.printf("; ");
+      }
+      System.out.println("\r\n" + "Do another? (y/n) ");
+      more = sc.next().toLowerCase().charAt(0);
+  } while (more == 'y');
+   }
+}   
+    }
+}
