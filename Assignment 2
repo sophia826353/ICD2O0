@@ -23,5 +23,6 @@ class Main {
   } while (more == 'y');
    }
 }   
-    }
-}
+     System.out.println (\n" "Numbers of temrs" = termcount;
+     System.out.println()
+
