@@ -1,28 +1,55 @@
-class Main {
+/* Heading 
+
+Sophia Mohamed 
+826353 
+Date : December 6, 2024 
+Course: ICD 2O0
+*/ 
+
+import java.util.Scanner;
+
+class Assignment2 {
  public static void main(String[] args) {
    Scanner sc = new Scanner(System.in);
-   
    char more = ' ';
+ 
+ 
    
    do {
-   System.out.print("Enter a whole number > 0: ");
+   System.out.print("Add a whole number > 0: ");// The user inputs a whole number bigger than 0
    int n = sc.nextInt();
-   System.out.print("The Collatz sequence for n = ");
+   int highestvalue = n;// Defines the highest value
+   int termcount = 1;// termcount starts at number 1
+   System.out.print("The Collatz sequence for n = " + n + " is "+ n + "; ");
    while (n > 1) {
-       if (n % 2 == 0) {
+       termcount++;
+       if (n % 2 == 0) {// if the number is even it gets divided by 2
             n = n / 2;
                
             } else {
-            n = 3 * n + 1;
+            n = 3 * n + 1;// if the number is odd it is multipled by 2 and 1 is then added
+            }
+            if (n> highestvalue){// code finds highest number
+                highestvalue = n;// redifines the hight value
             }
             System.out.printf("%,d", n);
-            System.out.printf("; ");
-      }
-      System.out.println("\r\n" + "Do another? (y/n) ");
+            if (n!= 1) {
+            System.out.print("; ");
+            }else{
+            System.out.print(" ");
+            }
+    }
+   
+   System.out.println("\n" + "Number of terms = " + termcount);// prints number of terms
+   System.out.println( "Highest value found: " + highestvalue);// prints highest value
+     
+      System.out.println("Add another? (y/n) ");// asks user if they want the code to run again
       more = sc.next().toLowerCase().charAt(0);
   } while (more == 'y');
+ 
+ 
+    System.out.println("Goodbye.");
+    sc.close();//code ends
+
    }
 }   
-     System.out.println (\n" "Numbers of temrs" = termcount;
-     System.out.println()
-
